@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: #dbe2ef;
+}
+.header {
+    height: 20vh;
+    text-align: center;
+    padding: 50px;
+}
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.header p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.showcase {
+    width: 90vw;
+    min-height: 74vh;
+    margin: auto;
+    display: grid;
+    place-items: start center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 60px 0;
+}
+
+.img img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+.center {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    display: block;
+    border: none;
+    cursor: pointer;
+    padding: 20px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #52616b;
+    outline: none;
+    color: #ffffff;
+    transition: all linear .3s;
+}
+.btn:hover {
+    background-color: #b9d7ea;
+    color: #222831;
+}
+.btn.active {
+    background-color: #f0f5f9;
+    color: #222831;
+}
+
+.art {
+    padding: 30px;
+    background-color:#f0f5f9;
+    display: none; 
+}
+.art h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222831;
+    margin-bottom: 10px;
+}
+.art p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    color: #222831; 
+}
+.art.active {
+    display: block;
+}
+
+footer {
+    height: 6vh;
+    text-align: center;
+    color:  #222831;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1080px) {
+    .showcase {
+        grid-template-columns: 1fr;
+    }
+}
